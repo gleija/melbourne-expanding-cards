@@ -6,7 +6,6 @@ import classes from './Todos.module.css';
 
 const Todos: React.FC = () => {
   const todosCtx = useContext(TodosContext);
-  console.log('Hello world');
 
   return (
     <ul className={classes.todos}>
