@@ -58,7 +58,7 @@ It means that `Apply this style to any element that has both the class "panel" a
 Such as:
 
 ```bash
-<div class="area1 item">
+<div class="panel active">
 ```
 
 2.- When using css-modules we need to find the classes in DOM as follow:
