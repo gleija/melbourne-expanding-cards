@@ -53,4 +53,22 @@ $ yarn commmit
 }
 ```
 
-It means that `Apply this style to any element that has both the class "area1" and "item"`
+It means that `Apply this style to any element that has both the class "panel" and "active"`.
+
+Such as:
+
+```bash
+<div class="area1 item">
+```
+
+2.- When using css-modules we need to find the classes in DOM as follow:
+
+```bash
+document.querySelectorAll<HTMLElement>(`.${classes.panel}`);
+```
+
+Without css modules:
+
+```bash
+document.querySelectorAll<HTMLElement>(`.panel`);
+```

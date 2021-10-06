@@ -8,6 +8,7 @@ const CardBody: React.FunctionComponent = () => {
     });
   };
 
+  // We wrap this clickHandler ina useCallBack to avoid falling onto an infinite loop when it is called as a dependency in useEffect
   const clickHandler = React.useCallback(() => {
     const panels: NodeListOf<HTMLElement> =
       document.querySelectorAll<HTMLElement>(`.${classes.panel}`);
