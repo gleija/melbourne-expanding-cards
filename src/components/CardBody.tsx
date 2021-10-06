@@ -8,31 +8,28 @@ const CardBody: React.FunctionComponent = () => {
     });
   };
 
-  const clickHandler = React.useCallback(
-    (event: React.MouseEvent<HTMLDivElement>) => {
-      const panels: NodeListOf<HTMLElement> =
-        document.querySelectorAll<HTMLElement>(`.${classes.panel}`);
-      panels.forEach((panel: HTMLElement) => {
-        panel.addEventListener('click', () => {
-          removeActiveClasses(panels);
-          panel.classList.add(`${classes.active}`);
-        });
+  const clickHandler = React.useCallback(() => {
+    const panels: NodeListOf<HTMLElement> =
+      document.querySelectorAll<HTMLElement>(`.${classes.panel}`);
+    panels.forEach((panel: HTMLElement) => {
+      panel.addEventListener('click', () => {
+        removeActiveClasses(panels);
+        panel.classList.add(`${classes.active}`);
       });
-    },
-    []
-  );
+    });
+  }, []);
 
   React.useEffect(() => {
-    window.addEventListener('click', clickHandler as any);
+    window.addEventListener('click', clickHandler);
     return () => {
-      window.removeEventListener('click', clickHandler as any);
+      window.removeEventListener('click', clickHandler);
     };
   }, [clickHandler]);
 
   interface PictureProps {
     imageURL: string;
     description: string;
-    onClick: (event: any) => void;
+    onClick: () => void;
   }
 
   const Picture: React.FunctionComponent<PictureProps> = ({

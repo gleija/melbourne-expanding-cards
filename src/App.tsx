@@ -1,7 +1,8 @@
+import React from 'react';
 import CardBody from './components/CardBody';
 
-function App() {
+const App: React.FunctionComponent = () => {
   return <CardBody />;
-}
+};
 
 export default App;
