@@ -1,7 +1,8 @@
 <div align="center" >
   <img src="social.png" alt="firebase" title="firebase" width="600px" />
 </div>
-# Expanding cards example
+
+## Expanding cards example
 
 This small projects is a quick reference to show a expanding cards example. Css courtesy of [Brad Traversy](https://github.com/bradtraversy).
 
