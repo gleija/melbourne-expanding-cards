@@ -42,3 +42,15 @@ Commit changes:
 ```bash
 $ yarn commmit
 ```
+
+## Notes
+
+1.- When a CSS rule with two selectors chained together:
+
+```bash
+.panel.active {
+  flex: 5;
+}
+```
+
+It means that `Apply this style to any element that has both the class "area1" and "item"`
