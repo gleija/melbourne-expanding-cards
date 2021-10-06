@@ -1,5 +1,5 @@
 <div align="center" >
-  <img src="social.png" alt="firebase" title="firebase" width="300px" />
+  <img src="social.png" alt="firebase" title="firebase" width="600px" />
 </div>
 # Expanding cards example
 
@@ -67,7 +67,7 @@ Such as:
 document.querySelectorAll<HTMLElement>(`.${classes.panel}`);
 ```
 
-Without css modules:
+Without css-modules:
 
 ```bash
 document.querySelectorAll<HTMLElement>(`.panel`);
